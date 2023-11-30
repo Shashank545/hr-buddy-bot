@@ -1,10 +1,10 @@
-# KIT Chat PoC  <!-- omit in toc -->
+# XXX Chat PoC  <!-- omit in toc -->
 
-This project is a prototype web application aiming to demonstrate that Azure OpenAI Service can offer a new form of user experience to KIT employees. The application is hosted on **Country Hosting** tenant.
+This project is a prototype web application aiming to demonstrate that Azure OpenAI Service can offer a new form of user experience to xxx employees. The application is hosted on **Country Hosting** tenant.
 
 - [Getting Started](#getting-started)
   - [Access to Country Hosting](#access-to-country-hosting)
-    - [Initial AZSA ITS Registration](#initial-azsa-its-registration)
+    - [Initial zzzz ITS Registration](#initial-zzzz-its-registration)
     - [Accounts Managed by CyberArk](#accounts-managed-by-cyberark)
   - [Prerequisites](#prerequisites)
   - [Running the Application Locally](#running-the-application-locally)
@@ -20,33 +20,33 @@ This project is a prototype web application aiming to demonstrate that Azure Ope
 
 ### Access to Country Hosting
 
-#### Initial AZSA ITS Registration
+#### Initial zzzz ITS Registration
 
-**(One time only)** Request AZSA ITS to create a user account and add them to the corresponding security group (Readers / Contributors / Owners)
+**(One time only)** Request zzzz ITS to create a user account and add them to the corresponding security group (Readers / Contributors / Owners)
 
 1. Submit [Country Hosting Request Form](https://forms.office.com/Pages/ResponsePage.aspx?id=uyT_3okgAESMjvceaAN4srgECulSRRpNkT8reLSDZa5URU0wME8wWDc1UVpPTDFUS1gwOTBIT0MxVyQlQCN0PWcu&wdLOR=c48452761-22EC-466B-AFF2-5F7A06C3AC4E)
 
-    - Subscription name: `JP-SUB-CH-DEV-KIT-CHAT`
-    - Owners of the subscription: Bangari, Samuel (KIT) <Samuel.Bangari@jp.kpmg.com> and Izumi, Ken (KIT) <Ken.Izumi@jp.kpmg.com>
+    - Subscription name: `JP-SUB-CH-DEV-xxx-CHAT`
+    - Owners of the subscription: Bangari, Samuel (xxx) <Samuel.Bangari@jp.yyyy.com> and Izumi, Ken (xxx) <Ken.Izumi@jp.yyyy.com>
     - Request Category: `Account - JP-CLD-IIDアカウント作成・削除申請`
-    - Name of the security group: `JP-SG CH Contributors KIT Chat`
+    - Name of the security group: `JP-SG CH Contributors xxx Chat`
     - For question #4, e-mail addresses of prospective users and their security group name should be entered
     - Question #6 (申請に必要な申請書/メールを添付してください。) could be left unanswered
 
-1. Since this step requires AZSA ITS to talk to Global ITS, it might take as much as 2~3 weeks.
-1. If AZSA ITS has any CyberArk licenses left, the department assigns some to prospective users at the time of account creation. If no CyberArk liceses are left, AZSA ITS sends emails to prospective users with initial passwords.
+1. Since this step requires zzzz ITS to talk to Global ITS, it might take as much as 2~3 weeks.
+1. If zzzz ITS has any CyberArk licenses left, the department assigns some to prospective users at the time of account creation. If no CyberArk liceses are left, zzzz ITS sends emails to prospective users with initial passwords.
 
 #### Accounts Managed by CyberArk
 
-1. **(One time only)** After the account is created, AZSA ITS sends a mail with further instructions, which need to be followed for activating the accounts. ![Activating CyberArk accounts](docs/cyberark1.png)
+1. **(One time only)** After the account is created, zzzz ITS sends a mail with further instructions, which need to be followed for activating the accounts. ![Activating CyberArk accounts](docs/cyberark1.png)
 
     1. Instructions contain a list of videos that the prospective users should watch (①~③).
-    1. In the end, the users should fill up a form and send it to AZSA ITS (④~⑥).
-    1. Once the form is submitted, AZSA ITS activates the account and the users can login to CyberArk and Azure Portal.
+    1. In the end, the users should fill up a form and send it to zzzz ITS (④~⑥).
+    1. Once the form is submitted, zzzz ITS activates the account and the users can login to CyberArk and Azure Portal.
 
 1. **(Every day)** Typical login flow for obtaining `jp-cld-{your name}` passwords is as follows. Please note that as the passwords stored in CyberArk change on a daily basis, we need to repeat this process every day.
 
-    1. Login to [CyberArk](https://cyberark-tokyo.jp.kworld.kpmg.com/PasswordVault) by using the same login credentials as F5 VPN, i.e., `Mac username` and `passphrase + RSA token`.
+    1. Login to [CyberArk](https://cyberark-tokyo.jp.kworld.yyyy.com/PasswordVault) by using the same login credentials as F5 VPN, i.e., `Mac username` and `passphrase + RSA token`.
     1. Show the password. ![Activating CyberArk accounts](docs/cyberark2.png)
     1. Copy the password.
     1. Login to Azure Portal using a different browser.
@@ -124,7 +124,7 @@ To give someone else access to a completely deployed and existing environment, e
 ### Provisioning and Deploy
 
 1. Provision the resources by running `azd provision`
-2. Create the index based on instructions in [Data Ingestion Guide](docs/kitchat_data_ingestion.md).
+2. Create the index based on instructions in [Data Ingestion Guide](docs/xxxchat_data_ingestion.md).
 3. Deploy the app by running `azd deploy`
 
 ## Utilities
@@ -133,7 +133,7 @@ To give someone else access to a completely deployed and existing environment, e
 
 The documents used in this project are provided in an Excel file. Use the instructions in this section to export those documents in CSV files.
 
-1. Create a local copy of [Reference Knowledges.xlsx](https://spo-global.kpmg.com/:x:/r/sites/JP-KIT_DI/Shared%20Documents/07%20-%20KOMEI/Chat%20KOMEI%20PoC/Reference%20Knowledges.xlsx?d=wd5c6d3f809ff41a2b3bb0367f6353081&csf=1&web=1&e=pQJlaw) and store it in `/data`.
+1. Create a local copy of [Reference Knowledges.xlsx](https://spo-global.yyyy.com/:x:/r/sites/JP-xxx_DI/Shared%20Documents/07%20-%20KOMEI/Chat%20KOMEI%20PoC/Reference%20Knowledges.xlsx?d=wd5c6d3f809ff41a2b3bb0367f6353081&csf=1&web=1&e=pQJlaw) and store it in `/data`.
 1. Create a Python virtual environment and install the packages.
 
     ```bash
@@ -152,7 +152,7 @@ The documents used in this project are provided in an Excel file. Use the instru
     data
     ├── Reference Knowledges.xlsx
     └── csv
-        ├── ifrs_faq.csv
+        ├── srfi_faq.csv
         ├── insights.csv
         └── red_book.csv
     ```
@@ -170,9 +170,9 @@ For testing purpose, please set AZURE_SEARCH_INDEX in `./azure/{env-name}/.env` 
 
 #### PDF Documents
 
-For testing purpose, please set AZURE_SEARCH_INDEX_JGAAP in `./azure/{env-name}/.env` to be something different from the index name used by the app (e.g. `test-index`).
+For testing purpose, please set AZURE_SEARCH_INDEX_paagj in `./azure/{env-name}/.env` to be something different from the index name used by the app (e.g. `test-index`).
 
-1. Prepare documents you want to upload in PDF files and store them in `/data/pdf`. You can download PDF files from [Knowledges - JGAPP](https://spo-global.kpmg.com/:f:/r/sites/JP-KIT_DI/Shared%20Documents/07%20-%20KOMEI/Chat%20KOMEI%20PoC/Knowledges%20-%20JGAPP?csf=1&web=1&e=sCx8Na).
+1. Prepare documents you want to upload in PDF files and store them in `/data/pdf`. You can download PDF files from [Knowledges - JGAPP](https://spo-global.yyyy.com/:f:/r/sites/JP-xxx_DI/Shared%20Documents/07%20-%20KOMEI/Chat%20KOMEI%20PoC/Knowledges%20-%20JGAPP?csf=1&web=1&e=sCx8Na).
 1. Run `./scripts/prepdocs.sh pdf`. This does two things:
    1. Upload PDF files to ABS.
       1. `<pdf ID>.pdf`: Copies of PDF files under `data/pdf`.
@@ -184,29 +184,29 @@ For testing purpose, please set AZURE_SEARCH_INDEX_JGAAP in `./azure/{env-name}/
 ### Sample ENV file
 
 ```
-AZURE_APP_SERVICE_PLAN_NAME="JP-asp-JPE-DEV-KIT-Chat-001"
-AZURE_BACKEND_SERVICE_NAME="JP-app-JPE-DEV-KIT-Chat-001"
-AZURE_ENV_NAME="kitchatpoc-20230920"
+AZURE_APP_SERVICE_PLAN_NAME="JP-asp-JPE-DEV-xxx-Chat-001"
+AZURE_BACKEND_SERVICE_NAME="JP-app-JPE-DEV-xxx-Chat-001"
+AZURE_ENV_NAME="xxxchatpoc-20230920"
 AZURE_LOCATION="japaneast"
-AZURE_OPENAI_RESOURCE_GROUP="JP-rg-JPE-DEV-KIT-kitchatpoc"
-AZURE_OPENAI_SERVICE="jp-oai-jpe-dev-kit-chat-001"
+AZURE_OPENAI_RESOURCE_GROUP="JP-rg-JPE-DEV-xxx-xxxchatpoc"
+AZURE_OPENAI_SERVICE="jp-oai-jpe-dev-xxx-chat-001"
 AZURE_PRIVATE_DNS_ZONE_OPENAI_ID="/subscriptions/186b7a44-a6a0-40e2-bc49-dfcd4162bcfd/resourceGroups/JP-RG-PrivateDNSZone/providers/Microsoft.Network/privateDnsZones/privatelink.openai.azure.com"
 AZURE_PRIVATE_DNS_ZONE_SEARCH_ID="/subscriptions/186b7a44-a6a0-40e2-bc49-dfcd4162bcfd/resourceGroups/JP-RG-PrivateDNSZone/providers/Microsoft.Network/privateDnsZones/privatelink.search.windows.net"
 AZURE_PRIVATE_DNS_ZONE_STBLOB_ID="/subscriptions/186b7a44-a6a0-40e2-bc49-dfcd4162bcfd/resourceGroups/JP-RG-PrivateDNSZone/providers/Microsoft.Network/privateDnsZones/privatelink.blob.core.windows.net"
 AZURE_PRIVATE_DNS_ZONE_WEBAPP_ID="/subscriptions/186b7a44-a6a0-40e2-bc49-dfcd4162bcfd/resourceGroups/JP-RG-PrivateDNSZone/providers/Microsoft.Network/privateDnsZones/privatelink.azurewebsites.net"
-AZURE_RESOURCE_GROUP="JP-rg-JPE-DEV-KIT-kitchatpoc"
-AZURE_SEARCH_INDEX="kitchat-searchindex-all"
-AZURE_SEARCH_INDEX_IFRS="ifrs"
-AZURE_SEARCH_INDEX_JGAAP="jgaap"
-AZURE_SEARCH_SERVICE="jp-srch-jpe-dev-kit-chat-001"
-AZURE_SEARCH_SERVICE_RESOURCE_GROUP="JP-rg-JPE-DEV-KIT-kitchatpoc"
-AZURE_STORAGE_ACCOUNT="kpmgjpstjpedevkitchat001"
+AZURE_RESOURCE_GROUP="JP-rg-JPE-DEV-xxx-xxxchatpoc"
+AZURE_SEARCH_INDEX="xxxchat-searchindex-all"
+AZURE_SEARCH_INDEX_srfi="srfi"
+AZURE_SEARCH_INDEX_paagj="paagj"
+AZURE_SEARCH_SERVICE="jp-srch-jpe-dev-xxx-chat-001"
+AZURE_SEARCH_SERVICE_RESOURCE_GROUP="JP-rg-JPE-DEV-xxx-xxxchatpoc"
+AZURE_STORAGE_ACCOUNT="yyyyjpstjpedevxxxchat001"
 AZURE_STORAGE_CONTAINER="content"
-AZURE_STORAGE_RESOURCE_GROUP="JP-rg-JPE-DEV-KIT-kitchatpoc"
+AZURE_STORAGE_RESOURCE_GROUP="JP-rg-JPE-DEV-xxx-xxxchatpoc"
 AZURE_SUBSCRIPTION_ID="4e5f4eee-7351-44f9-b798-5cc689abbc47"
 AZURE_TENANT_ID="deff24bb-2089-4400-8c8e-f71e680378b2"
-BACKEND_URI="https://jp-app-jpe-dev-kit-chat-001.azurewebsites.net"
-OPENAI_API_ENDPOINT="https://jp-oai-jpe-dev-kit-chat-001.openai.azure.com"
+BACKEND_URI="https://jp-app-jpe-dev-xxx-chat-001.azurewebsites.net"
+OPENAI_API_ENDPOINT="https://jp-oai-jpe-dev-xxx-chat-001.openai.azure.com"
 SEARCH_API_KEY="REDACTED"
-SEARCH_ENDPOINT="https://jp-srch-jpe-dev-kit-chat-001.search.windows.net"
+SEARCH_ENDPOINT="https://jp-srch-jpe-dev-xxx-chat-001.search.windows.net"
 ```
