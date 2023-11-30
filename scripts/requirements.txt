@@ -1,0 +1,16 @@
+azure-identity==1.14.0b2
+azure-search-documents==11.4.0b8
+azure-storage-blob==12.14.1
+certifi==2023.5.7
+langchain==0.0.288
+openai[datalib]==0.27.8
+openpyxl==3.1.2
+pdfplumber==0.10.2
+pycryptodome==3.18.0
+python-dotenv==1.0.0
+rich==13.4.2
+spacy==3.7.2,<4.0.0
+spacy-langdetect==0.1.2
+tiktoken==0.4.0
+unstructured==0.10.11
+en_core_web_sm @ https://github.com/explosion/spacy-models/releases/download/en_core_web_sm-3.7.1/en_core_web_sm-3.7.1-py3-none-any.whl

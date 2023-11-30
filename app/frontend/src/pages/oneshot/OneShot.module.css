@@ -1,0 +1,94 @@
+.oneshotContainer {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    align-items: center;
+}
+
+.oneshotTopSection {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.oneshotBottomSection {
+    display: flex;
+    width: 800px;
+    margin-top: 20px;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.oneshotTitle {
+    margin-top: 50px;
+    font-size: 3rem;
+    font-weight: 600;
+}
+
+.oneshotQuestionInput {
+    max-width: 800px;
+    width: 100%;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.oneshotIndexButtonWrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    max-width: 800px;
+    width: 100%;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.oneshotIndexButtons {
+    display: flex;
+    flex-direction: row;
+    gap: 8px;
+    margin: 8px;
+    padding: 0px;
+}
+
+.oneshotAnswerContainer {
+    width: 100%;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.oneshotAnalysisPanel {
+    padding: 10px;
+}
+
+.oneshotSettingsSeparator {
+    margin-top: 15px;
+}
+
+.settingsButton {
+    align-self: flex-end;
+    margin-right: 20px;
+    margin-top: 20px;
+}
+
+.oneshotDeploymentOption {
+    display: flex;
+    flex-direction: column;
+}
+
+.oneshotDeploymentOptionPrice {
+    font-size: 10px;
+    font-weight: 400;
+    color: rgb(196, 71, 71);
+}
+
+.oneshotApproachOption {
+    display: flex;
+    flex-direction: column;
+}
+
+.oneshotApproachOptionDescription {
+    font-size: 10px;
+    font-weight: 400;
+    color: rgb(132, 132, 132);
+}

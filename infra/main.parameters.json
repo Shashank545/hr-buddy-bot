@@ -1,0 +1,91 @@
+{
+  "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentParameters.json#",
+  "contentVersion": "1.0.0.0",
+  "parameters": {
+    "environmentName": {
+      "value": "${AZURE_ENV_NAME}"
+    },
+    "location": {
+      "value": "${AZURE_LOCATION}"
+    },
+    "principalIds": {
+      "metadata": {
+        "3d395c00-c371-46df-8a2f-e97eaf57d27d": "JP-SG CH Contributors KIT Chat",
+        "dd286929-5eeb-48a4-b16f-e8cc870faac9": "JP-SG CH Owners KIT Chat"
+      },
+      "value": [
+        "3d395c00-c371-46df-8a2f-e97eaf57d27d",
+        "dd286929-5eeb-48a4-b16f-e8cc870faac9"
+      ]
+    },
+    "resourceGroupName": {
+      "value": "${AZURE_RESOURCE_GROUP}"
+    },
+    "vnetName": {
+      "value": "JP-vnet-JPE-DEV-KIT-Chat"
+    },
+    "vnetRgName": {
+      "value": "JP-RG-JPE-CoreNetworking"
+    },
+    "appServicePlanName":{
+      "value": "${AZURE_APP_SERVICE_PLAN_NAME}"
+    },
+    "backendServiceName":{
+      "value": "${AZURE_BACKEND_SERVICE_NAME}"
+    },
+    "webappPrivateDnsZoneId":{
+      "value": "${AZURE_PRIVATE_DNS_ZONE_WEBAPP_ID}"
+    },
+    "searchServiceName": {
+      "value": "${AZURE_SEARCH_SERVICE}"
+    },
+    "searchIndexName": {
+      "value": "${AZURE_SEARCH_INDEX}"
+    },
+    "searchServiceResourceGroupName": {
+      "value": "${AZURE_SEARCH_SERVICE_RESOURCE_GROUP}"
+    },
+    "searchServiceSkuName": {
+      "value": "standard"
+    },
+    "searchPrivateDnsZoneId":{
+      "value": "${AZURE_PRIVATE_DNS_ZONE_SEARCH_ID}"
+    },
+    "storageAccountName": {
+      "value": "${AZURE_STORAGE_ACCOUNT}"
+    },
+    "storageResourceGroupName": {
+      "value": "${AZURE_STORAGE_RESOURCE_GROUP}"
+    },
+    "storageBlobPrivateDnsZoneId": {
+      "value": "${AZURE_PRIVATE_DNS_ZONE_STBLOB_ID}"
+    },
+    "openAiServiceName": {
+      "value": "${AZURE_OPENAI_SERVICE}"
+    },
+    "openAiResourceGroupName": {
+      "value": "${AZURE_OPENAI_RESOURCE_GROUP}"
+    },
+    "openAiSkuName": {
+      "value": "S0"
+    },
+    "openAiPrivateDnsZoneId":{
+      "value": "${AZURE_PRIVATE_DNS_ZONE_OPENAI_ID}"
+    },
+    "formRecognizerServiceName": {
+      "value": "${AZURE_FORMRECOGNIZER_SERVICE}"
+    },
+    "formRecognizerResourceGroupName": {
+      "value": "${AZURE_FORMRECOGNIZER_RESOURCE_GROUP}"
+    },
+    "formRecognizerSkuName": {
+      "value": "S0"
+    },
+    "chatGptDeploymentName": {
+      "value": "${AZURE_OPENAI_CHATGPT_DEPLOYMENT=chat}"
+    },
+    "useApplicationInsights": {
+      "value": "${AZURE_USE_APPLICATION_INSIGHTS=false}"
+    }
+  }
+}

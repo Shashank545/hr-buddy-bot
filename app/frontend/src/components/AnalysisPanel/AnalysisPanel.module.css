@@ -1,0 +1,9 @@
+.thoughtProcess {
+    font-family: monospace;
+    word-wrap: break-word;
+    padding: 10px;
+}
+
+.thoughtProcessDescription {
+    margin-left: 18px;
+}
